@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    background-image: url('https://ryansechrest.com/content/images/2022/08/nodes.gif');
+    background-position:center;
+    background-size:cover ;
+    background-attachment:fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.center-content{
+    width: fit-content;
+    height: fit-content;
+    /* background: rgb(6, 30, 42); */
+    padding: 10px;
+    
+    color:rgb(69,151,175);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 2rem;
+    font-family:  monospace;
+   text-align: center;
+   margin-bottom: 10px;
+    
+}
+.center-content h1{
+    transition:font-size 4s;
+}
+.center-content  h1:hover{
+    font-size: 4rem;
+    color: aqua;
+    cursor:pointer;
+    /* font-family: 'VT323', monospace; */
+}
+.content-bg{
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+
+}
+
+.content-2{
+    /* background-color: black; */
+    /* opacity: .5; */
+    width: fit-content;
+    height:fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: yellow;
+text-align: center;
+padding: 2px;
+}
+input{
+    display: block;
+    margin: 10px;
+    min-width: 300px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: 2px solid rgb(69,151,175);
+    color: rgb(69,151,175);
+    font-size: 2rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: outline,color 2s;
+
+}
+input:focus,input:hover{
+    border: none;
+    outline-color: aqua;
+    color: aqua;
+}
+button{
+    background:none;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    border: none;
+    font-size: 2rem;
+    transition: background-color 2s;
+    color: rgb(69,151,175);
+}
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .content-bg{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
